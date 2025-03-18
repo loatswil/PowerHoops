@@ -1,65 +1,65 @@
 region, name, mascot, rank, bonus
-east, Connecticut, Huskies,1,0
-east, Stetson, Hatters,16,0
-east, Florida Atlantic, Owls,8,0
-east, Northwestern, Wildcats,9,0
-east, San Diego State, Aztecs,5,0
-east, UAB, Dragons,12,0
-east, Auburn, Tigers,4,0
-east, Yale, Bulldogs,13,0
-east, BYU, Cougars,6,0
-east, Duquense, Dogs,11,0
-east, Illinois, Illini,3,0
-east, Morehead State, Eagles,14,0
-east, Washington State, Huskies,7,0
-east, Drake, Bulldogs,10,0
-east, Iowa State, Cyclones,2,0
-east, South Dakota State, Coyotes,15,0
-west, North Carolina, Tarheals,1,0
-west, Howard, Bison,16,0
-west, Mississippi State, Bulldogs,8,0
-west, Michigan State, Spartys,9,0
-west, Saint Mary's, Gaels,5,0
-west, Grand Canyon, Gorillas,12,0
-west, Alabama, Tide,4,0
-west, Charleston, Cougars,13,0
-west, Clemson, Tigers,6,0
-west, New Mexico, Lobos,11,0
-west, Baylor, Bears,3,0
-west, Colgate, Raiders,14,0
-west, Dayton, Fliers,7,0
-west, Nevada, Wolves,10,0
-west, Arizona, Cardinals,2,0
-west, Long Beach State, Prospectors,15,0
-south, Houston, Cougars,1,0
-south, Longwood, Lancers,16,0
-south, Nebraska, Cornhuskers,8,0
-south, Texas A&M, Cowboys,9,0
-south, Wisconsin, Badgers,5,0
-south, James Madison, Dogs,12,0
-south, Duke, Blue Devils,4,0
-south, Vermont, Catamounts,13,0
-south, Texas Tech, Red Raiders,6,0
-south, NC State, Wolfpackers,11,0
-south, Kentucky, Wildcats,3,0
-south, Oakland, Grizzlies,14,0
-south, Florida, Gators,7,0
-south, Boise State, Bronco Busters,10,0
-south, Marquette, Golden Eagles,2,0
-south, Western Kentucky, Hilltoppers,15,0
-midwest, Purdue, Boilermakers,1,0
-midwest, Montana State, Bobcats,16,0
-midwest, Utah State, Aggies,8,0
-midwest, TCU, Hornfrogs,9,0
-midwest, Gonzaga, Bulldogs,5,0
-midwest, McNeese, Cowboys,12,0
-midwest, Kansas, Jayhawks,4,0
-midwest, Samford, Bulldogs,13,0
-midwest, South Carolna, Gamecocks,6,0
-midwest, Oregon, Ducks,11,0
-midwest, Creighton, Bluejays,3,0
-midwest, Akron, Zips,14,0
-midwest, Texas, Longhorns,7,0
-midwest, Virginia, Cavaliers,10,0
-midwest, Tennessee, Volunteers,2,0
-midwest, Saint Peters, Peacocks,15,0
+east, Duke, Blue Devils,1,6
+west,Kansas,Jayhawks,7,6
+midwest,Kentucky, Wildcats,3,3
+south,Louisville,Cardinals,8,3
+south,Michigan State,Spartans,2,4
+midwest,UCLA,Bruins,7,4
+east,Oregon,Ducks,5,2
+east,Arizona,Wildcats,4,2
+west, Florida, Gators,1,2
+midwest,Gonzaga,Zags,8,4
+east,Baylor,Bears,9,2
+midwest,Houston,Cougars,1,2
+east,Wisconsin,Badgers,3,1
+west,Maryland,Terps,4,1
+south,Michigan,Wolverines,5,1
+midwest,Tennessee,Volunteers,2,1
+east,American,Eagles,16,0
+east,Mississippi State,Bulldogs,8,0
+east,Libery,Eagles,12,0
+east,Akron, Zips,13,0
+east,BYU,Cougars,6,0
+east,VCU,Rams,11,0
+east,Montana,Grizzlies,14,0
+east, Saint Marys, Gaels,7,0
+east,Vanderbilt,Commodores,10,0
+east,Alabama, Crimson Tide,2,0
+east,Robert Morris,Colonials,15,0
+west,Norfolk State,Spartans,16,0
+west, Uconn, Huskies,8,0
+west,Oklahoma,Sooners,9,0
+west,Memphis,Tigers,5,0
+west,Colorado State,Rams,12,0
+west,Grand Canyon,Lopes,13,0
+west,Missouri, Tigers,6,0
+west,Drake,Bulldogs,11,0
+west,Texas Tech,Reed Raiders,3,0
+west,UNCW,Seahawks,14,0
+west,Arkansas,Razorbacks,10,0
+west,St. Johns,Red Storm,2,0
+west,Omaha,Mavericks,15,0
+south, Auburn, Tigers,1,0
+south,St. Francis,Red Flash,16,0
+south,Creighton,Blue Jays,9,0
+south,UC San Diego,Tritons,12,0
+south,Texas A&M,Aggies,4,0
+south,Yale,Bulldogs,13,0
+south,Ole Miss,Rebels,6,0
+south,San Diego State,Aztecs,11,0
+south,Iowa State,Cyclones,3,0
+south,Lipscomb,Bisons,14,0
+south,Marquette,Golden Eagles,7,0
+south,New Mexico,Lobos,10,0
+south,Bryant,Bulldogs,15,0
+midwest,SIUE,Cougars,16,0
+midwest,Georgia,Bulldogs,9,0
+midwest,Clemson,Tigers,5,0
+midwest,McNeese,Cowboys,12,0
+midwest,Purdue,Boilermakers,4,0
+midwest,High Point,Panthers,13,0
+midwest,Illinois,Illini,6,0
+midwest,Texas,Longhorns,11,0
+midwest,Troy,Trojans,14,0
+midwest,Utah State,Aggies,10,0
+midwest,Wolford,Terriers,15,0

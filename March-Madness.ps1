@@ -105,14 +105,15 @@ Function Get-Modifier {
     # Incoming rank from the CSV file.
     Param([int]$Rank)
     Switch ($Rank) {
-    {$_ -in 1..2} {$Modifier = 8}
-    {$_ -in 3..4} {$Modifier = 7}
+    {$_ -in 1..2} {$Modifier = 10}
+    {$_ -in 3..4} {$Modifier = 8}
     {$_ -in 5..6} {$Modifier = 6}
     {$_ -in 7..8} {$Modifier = 5}
     {$_ -in 9..10} {$Modifier = 4}
     {$_ -in 11..12} {$Modifier = 3}
     {$_ -in 13..14} {$Modifier = 2}
     {$_ -in 15..16} {$Modifier = 1}
+    Default {$Modifier = 0}
     }
     Return $Modifier
 }
@@ -138,8 +139,11 @@ Function Play-Game {
     # to track the names and other stats in $results.
     param([string]$GameName,[PSobject]$Team1,[PSobject]$Team2)
 
-    $Score1 = (((Get-Random -Minimum 55 -Maximum 85) + (2*(Get-Modifier -Rank $Team1.rank))) + $Team1.bonus)
-    $Score2 = (((Get-Random -Minimum 55 -Maximum 85) + (2*(Get-Modifier -Rank $Team2.rank))) + $Team2.bonus)
+    $RankMod1 = Get-Random -Minimum 2 -Maximum 4
+    $RankMod2 = Get-Random -Minimum 2 -Maximum 4
+
+    $Score1 = (((Get-Random -Minimum 55 -Maximum 85) + ($RankMod1*(Get-Modifier -Rank $Team1.rank))) + $Team1.bonus)
+    $Score2 = (((Get-Random -Minimum 55 -Maximum 85) + ($RankMod2*(Get-Modifier -Rank $Team2.rank))) + $Team2.bonus)
 
     $Mod1 = (Get-Modifier -Rank $Team1.rank)
     $Mod2 = (Get-Modifier -Rank $Team2.rank)    
@@ -345,32 +349,32 @@ $Winner = $Game18
 
 if ($ShowResults) {
 
-    $16Team1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Team1
-    $16Team2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Team2
-    $16Score1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Score1
-    $16Score2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Score2
-    $16Rank1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Rank1
-    $16Rank2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Rank2
-    $16Mascot1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Mascot1
-    $16Mascot2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select Mascot2
+    $16Team1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Team1
+    $16Team2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Team2
+    $16Score1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Score1
+    $16Score2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Score2
+    $16Rank1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Rank1
+    $16Rank2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Rank2
+    $16Mascot1 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Mascot1
+    $16Mascot2 = $Results | Where-Object {$_.GameName -eq "Game16"} | Select-Object Mascot2
 
-    $17Team1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Team1
-    $17Team2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Team2
-    $17Score1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Score1
-    $17Score2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Score2
-    $17Rank1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Rank1
-    $17Rank2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Rank2
-    $17Mascot1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Mascot1
-    $17Mascot2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select Mascot2
+    $17Team1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Team1
+    $17Team2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Team2
+    $17Score1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Score1
+    $17Score2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Score2
+    $17Rank1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Rank1
+    $17Rank2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Rank2
+    $17Mascot1 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Mascot1
+    $17Mascot2 = $Results | Where-Object {$_.GameName -eq "Game17"} | Select-Object Mascot2
 
-    $18Team1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Team1
-    $18Team2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Team2
-    $18Score1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Score1
-    $18Score2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Score2
-    $18Rank1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Rank1
-    $18Rank2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Rank2
-    $18Mascot1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Mascot1
-    $18Mascot2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select Mascot2
+    $18Team1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Team1
+    $18Team2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Team2
+    $18Score1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Score1
+    $18Score2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Score2
+    $18Rank1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Rank1
+    $18Rank2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Rank2
+    $18Mascot1 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Mascot1
+    $18Mascot2 = $Results | Where-Object {$_.GameName -eq "Game18"} | Select-Object Mascot2
 
     ""
     Write-Host "Final Four:"
